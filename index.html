@@ -9,18 +9,18 @@
 <meta property="og:url" content="https://boda-eduardo-y-karen.vercel.app/">
 <meta property="og:title" content="Eduardo &amp; Karen · 10 · X · MMXXVI">
 <meta property="og:description" content="Nos casamos y queremos que estés ahí. Cancún — 10 Octubre 2026">
-<meta property="og:image" content="https://boda-eduardo-y-karen.vercel.app/sobre.png">
-<meta property="og:image:secure_url" content="https://boda-eduardo-y-karen.vercel.app/sobre.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="768">
-<meta property="og:image:height" content="1376">
+<meta property="og:image" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
+<meta property="og:image:secure_url" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Invitación de boda Eduardo y Karen">
 <meta property="og:locale" content="es_MX">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://boda-eduardo-y-karen.vercel.app/">
 <meta name="twitter:title" content="Eduardo &amp; Karen · 10 · X · MMXXVI">
 <meta name="twitter:description" content="Nos casamos y queremos que estés ahí. Cancún — 10 Octubre 2026">
-<meta name="twitter:image" content="https://boda-eduardo-y-karen.vercel.app/sobre.png">
+<meta name="twitter:image" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
 <script>if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -155,11 +155,9 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 
 /* UBICACION */
 #ubicacion{padding:80px 28px;background:var(--surface);text-align:center}
-.loc-tabs{display:flex;gap:0;border-radius:50px;background:rgba(14,51,102,.06);padding:4px;margin:22px auto 28px;max-width:380px}
-.loc-tab{flex:1;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text);border:none;background:transparent;padding:11px 8px;border-radius:50px;cursor:pointer;transition:all .3s;opacity:.55}
-.loc-tab.active{background:var(--dark);color:var(--copper-light);opacity:1;box-shadow:0 3px 14px rgba(14,51,102,.2)}
 .loc-card{background:var(--card);border-radius:22px;padding:30px 22px 26px;box-shadow:0 6px 32px rgba(14,51,102,.07);border:1px solid rgba(14,51,102,.1);text-align:center}
-.loc-venue-name{font-family:'Great Vibes',cursive;font-size:44px;color:var(--dark);text-align:center;line-height:1.1;margin-bottom:6px}
+.loc-venue-name{font-family:'Great Vibes',cursive;font-size:48px;color:var(--dark);text-align:center;line-height:1.1;margin-bottom:4px;text-shadow:0 0 28px rgba(222,149,178,.45),0 0 56px rgba(222,149,178,.2);position:relative;display:inline-block}
+.loc-venue-name::after{content:'';position:absolute;inset:-8px -16px;border-radius:50%;background:radial-gradient(ellipse at center,rgba(222,149,178,.12) 0%,transparent 70%);pointer-events:none;z-index:-1}
 .loc-badge{display:flex;align-items:center;gap:6px;background:rgba(14,51,102,.07);border:1px solid rgba(14,51,102,.2);border-radius:50px;padding:5px 14px;font-family:'Jost',sans-serif;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--accent);margin:0 auto 20px;width:fit-content}
 .loc-info-row{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 0;border-bottom:1px solid rgba(14,51,102,.08)}
 .loc-info-row:last-child{border-bottom:none}
@@ -218,16 +216,24 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .wheel-card img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
 .wheel-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);opacity:.5;margin-top:18px;display:block;padding:0 28px}
 
-/* REGALOS */
+/* REGALOS — SOBRE INTERACTIVO */
 #regalos{padding:80px 28px;background:var(--dark);text-align:center;position:relative;overflow:hidden}
 #regalos .eyebrow{color:var(--copper-light);opacity:.65}
 #regalos .script-title{color:var(--copper-light)}
 .gift-msg{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;line-height:1.9;color:rgba(240,245,255,.7);max-width:340px;margin:0 auto 32px;text-align:center}
-.gift-options{display:flex;flex-direction:column;gap:16px;margin:0 auto;max-width:340px}
-.gift-icon-wrap{margin:8px auto 0;display:flex;justify-content:center;align-items:center}
-.gift-option{background:rgba(240,245,255,.04);border:1px solid rgba(222,149,178,.22);border-radius:18px;padding:36px 24px;position:relative;text-align:center}
-.gift-option-label{font-family:'Jost',sans-serif;font-size:9px;letter-spacing:4px;text-transform:uppercase;color:var(--copper);margin-bottom:12px;display:block}
-.gift-holder{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:rgba(240,245,255,.8);line-height:1.8}
+.env-interactive{display:flex;flex-direction:column;align-items:center;cursor:pointer;-webkit-tap-highlight-color:transparent;outline:none;border:none;background:none;padding:0}
+.env-body{perspective:700px;position:relative;width:260px;height:200px;animation:env-breathe 3.6s ease-in-out infinite}
+.env-body svg.env-svg{width:100%;height:100%}
+.env-flap-wrap{position:absolute;top:46px;left:18px;width:224px;height:86px;transform-origin:top center;transform-style:preserve-3d;backface-visibility:hidden;-webkit-backface-visibility:hidden;transition:transform .65s cubic-bezier(.4,0,.2,1);pointer-events:none;z-index:2}
+.env-interactive.open .env-flap-wrap{transform:rotateX(-175deg)}
+.env-open-content{overflow:hidden;max-height:0;opacity:0;transition:max-height .55s .3s ease,opacity .4s .38s ease;display:flex;flex-direction:column;align-items:center;gap:8px;padding:0 20px;text-align:center;pointer-events:none}
+.env-interactive.open .env-open-content{max-height:240px;opacity:1;pointer-events:auto}
+.env-mailbox-icon{width:40px;height:40px;color:var(--copper-light);margin-top:10px}
+.env-title{font-family:'Great Vibes',cursive;font-size:30px;color:var(--copper-light);letter-spacing:.5px;line-height:1.2}
+.env-desc{font-family:'Cormorant Garamond',serif;font-size:13px;font-style:italic;color:rgba(240,245,255,.7);line-height:1.75}
+.env-tap-hint{font-family:'Jost',sans-serif;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--copper);opacity:.7;margin-top:6px;transition:opacity .3s}
+.env-interactive.open~.env-tap-hint{opacity:0;pointer-events:none}
+@keyframes env-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.03)}}
 .copy-toast{position:fixed;bottom:96px;left:50%;transform:translateX(-50%);background:var(--accent);color:#fff;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:2px;padding:10px 24px;border-radius:50px;opacity:0;pointer-events:none;z-index:9999;transition:opacity .3s}
 .copy-toast.show{opacity:1}
 
@@ -247,16 +253,32 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .qr-deco-line span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(222,149,178,.75);white-space:nowrap}
 .qr-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(222,149,178,.7)}
 
-/* RSVP */
+/* RSVP — Glassmorphism Card */
 #rsvp{padding:80px 28px;background:var(--bg);text-align:center}
-.rsvp-deadline{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;letter-spacing:1px;color:var(--copper);margin-bottom:26px;display:block}
-.rsvp-card{background:var(--card);border-radius:22px;padding:32px 24px;box-shadow:0 8px 42px rgba(14,51,102,.07);border:1px solid rgba(14,51,102,.1);text-align:center}
-.rsvp-welcome{font-family:'Great Vibes',cursive;font-size:32px;color:var(--dark);margin-bottom:8px;display:block}
-.rsvp-pases{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--accent2);margin-bottom:24px;display:block}
-.btn-confirm{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:6px;background:var(--dark);color:var(--copper-light);border:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:400;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:16px 24px;border-radius:50px;transition:background .3s}
-.btn-confirm:hover{background:var(--accent)}
-.btn-confirm svg{width:20px;height:20px;fill:currentColor;flex-shrink:0}
-.rsvp-status{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--accent);margin-top:16px;display:none}
+.rsvp-card{position:relative;background:rgba(255,255,255,.75);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-radius:22px;padding:40px 24px 32px;box-shadow:0 8px 42px rgba(14,51,102,.07);border:1px solid rgba(222,149,178,.3);text-align:center;overflow:hidden}
+.rsvp-corner{position:absolute;width:36px;height:36px}
+.rsvp-corner.tl{top:10px;left:10px}.rsvp-corner.tr{top:10px;right:10px;transform:scaleX(-1)}.rsvp-corner.bl{bottom:10px;left:10px;transform:scaleY(-1)}.rsvp-corner.br{bottom:10px;right:10px;transform:scale(-1)}
+.rsvp-ornament{display:flex;align-items:center;gap:8px;margin-bottom:18px}
+.rsvp-ornament::before,.rsvp-ornament::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(222,149,178,.45),transparent)}
+.rsvp-name-display{font-family:'Great Vibes',cursive;font-size:36px;color:var(--dark);margin-bottom:4px;display:none}
+.rsvp-divider-heart{display:flex;align-items:center;gap:10px;margin:14px auto 18px;justify-content:center}
+.rsvp-divider-heart::before,.rsvp-divider-heart::after{content:'';width:48px;height:1px;background:linear-gradient(to right,transparent,rgba(222,149,178,.4),transparent)}
+.rsvp-pases-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--accent);margin-bottom:20px}
+.rsvp-toggle{display:flex;gap:14px;justify-content:center;margin-bottom:20px}
+.rsvp-toggle-btn{flex:1;max-width:140px;padding:13px 0;border-radius:50px;border:1.5px solid rgba(14,51,102,.2);background:transparent;cursor:pointer;font-family:'Jost',sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--dark);transition:all .3s;display:flex;align-items:center;justify-content:center;gap:6px}
+.rsvp-toggle-btn svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}
+.rsvp-toggle-selected-yes{background:var(--accent);color:#fff;border-color:var(--accent)}
+.rsvp-toggle-selected-no{background:var(--copper);color:#fff;border-color:var(--copper)}
+#rsvp-fields{display:flex;flex-direction:column;gap:10px;margin-bottom:18px}
+.rsvp-input{width:100%;padding:12px 16px;border:1.5px solid rgba(14,51,102,.15);border-radius:12px;background:rgba(255,255,255,.6);font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--dark);outline:none;transition:border-color .3s}
+.rsvp-input:focus{border-color:var(--copper)}
+.rsvp-input::placeholder{color:rgba(14,51,102,.35);font-style:italic}
+.rsvp-confirm-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:var(--dark);color:var(--copper-light);border:none;cursor:pointer;font-family:'Jost',sans-serif;font-weight:400;font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:16px 24px;border-radius:50px;transition:all .3s;margin-top:6px}
+.rsvp-confirm-btn:hover{background:var(--accent)}
+.rsvp-confirm-btn:disabled{opacity:.6;cursor:not-allowed}
+.rsvp-confirm-btn svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+.rsvp-feedback{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;margin-top:14px;display:none}
+.rsvp-deadline-badge{display:inline-flex;align-items:center;gap:6px;margin-top:18px;padding:6px 16px;border-radius:50px;background:rgba(14,51,102,.05);border:1px solid rgba(14,51,102,.12);font-family:'Jost',sans-serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--accent)}
 
 /* FOOTER */
 #footer{padding:68px 28px 50px;text-align:center;background:var(--dark)}
@@ -453,45 +475,21 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <p class="eyebrow rv">Dónde Celebramos</p>
     <h2 class="script-title rv">Ubicación</h2>
     <p class="section-sub rv">Cancún, Quintana Roo</p>
-    <div class="loc-tabs rv" id="locTabs">
-      <button class="loc-tab active" data-panel="religiosa">Ceremonia</button>
-      <button class="loc-tab" data-panel="recepcion">Recepción</button>
-    </div>
-    <div class="loc-panel active" id="panel-religiosa">
-      <div class="loc-card rv">
-        <div class="loc-venue-name">Ceremonia Religiosa</div>
-        <div class="loc-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Ceremonia Religiosa</div>
-        <div class="loc-info-row">
-          <svg class="loc-info-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <div class="loc-info-text"><strong>4:00 PM</strong> Ceremonia Religiosa</div>
-        </div>
-        <div class="map-container">
-          <iframe title="Ceremonia Religiosa" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Jardin+y+Salon+de+Eventos+Las+Hojas+Cancun+Quintana+Roo&output=embed&z=16"></iframe>
-        </div>
-        <a href="https://maps.app.goo.gl/JJups3UaSTFS469y9?g_st=ac" target="_blank" rel="noopener" class="btn-directions">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Cómo llegar
-        </a>
+    <div class="loc-card rv">
+      <div class="loc-venue-name">Jardín &amp; Salón<br>de Eventos Las Hojas</div>
+      <div class="loc-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>Ceremonia &amp; Recepción</div>
+      <div class="loc-info-row">
+        <svg class="loc-info-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div class="loc-info-text"><strong>4:00 PM</strong> Ceremonia Religiosa &amp; Recepción</div>
       </div>
-    </div>
-    <div class="loc-panel" id="panel-recepcion">
-      <div class="loc-card rv">
-        <div class="loc-venue-name">Recepción</div>
-        <div class="loc-badge"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Recepción &amp; Fiesta</div>
-        <div class="loc-info-row">
-          <svg class="loc-info-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <div class="loc-info-text"><strong>4:00 PM</strong> Recepción</div>
-        </div>
-        <div class="map-container">
-          <iframe title="Recepción" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=Jardin+y+Salon+de+Eventos+Las+Hojas+Cancun+Quintana+Roo&output=embed&z=16"></iframe>
-        </div>
-        <a href="https://maps.app.goo.gl/JJups3UaSTFS469y9" target="_blank" rel="noopener" class="btn-directions">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          Cómo llegar
-        </a>
+      <div class="map-container">
+        <iframe title="Jardín y Salón de Eventos Las Hojas" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Jardin+y+Salon+de+Eventos+Las+Hojas+Cancun+Quintana+Roo&output=embed&z=16"></iframe>
       </div>
+      <a href="https://maps.app.goo.gl/JJups3UaSTFS469y9?g_st=ac" target="_blank" rel="noopener" class="btn-directions">
+        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        Cómo llegar
+      </a>
     </div>
     <div class="cal-section rv">
       <span class="cal-label">Agenda el día especial</span>
@@ -594,43 +592,56 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <span class="wheel-hint rv">Desliza para girar</span>
   </section>
 
-  <!-- REGALOS -->
+  <!-- REGALOS — SOBRE INTERACTIVO -->
   <section id="regalos">
     <p class="eyebrow rv">Mesa de Regalos</p>
-    <h2 class="script-title rv">Un Obsequio</h2>
+    <h2 class="script-title rv">Lluvia de Sobres</h2>
     <p class="gift-msg rv">Tu presencia es nuestro regalo más preciado.<br>Si deseas celebrarnos con un obsequio,<br>con infinita gratitud lo recibimos.</p>
-    <div class="gift-icon-wrap rv">
-      <svg viewBox="0 0 64 64" width="90" height="90" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="8" y="28" width="48" height="30" rx="3" stroke="#de95b2" stroke-width="1.8" fill="rgba(222,149,178,.08)"/>
-        <rect x="6" y="20" width="52" height="10" rx="2" stroke="#de95b2" stroke-width="1.8" fill="rgba(222,149,178,.12)"/>
-        <line x1="32" y1="20" x2="32" y2="58" stroke="#de95b2" stroke-width="1.8"/>
-        <line x1="6" y1="25" x2="58" y2="25" stroke="#de95b2" stroke-width="1.8"/>
-        <path d="M32 20 Q22 10 18 14 Q14 18 24 20" stroke="#de95b2" stroke-width="1.8" fill="rgba(222,149,178,.15)" stroke-linecap="round"/>
-        <path d="M32 20 Q42 10 46 14 Q50 18 40 20" stroke="#de95b2" stroke-width="1.8" fill="rgba(222,149,178,.15)" stroke-linecap="round"/>
-      </svg>
-    </div>
-    <div class="gift-options rv">
-      <div class="gift-option">
-        <span class="gift-option-label">Lluvia de Sobres</span>
-        <span class="gift-holder">El día del evento habrá un buzón<br>donde podrás depositar tu sobre.</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- RSVP -->
-  <section id="rsvp" class="sec rv">
-    <p class="eyebrow">Confirmación</p>
-    <h2 class="script-title">RSVP</h2>
-    <p class="section-sub">Confirma tu asistencia antes del 2 de octubre</p>
-    <span class="rsvp-deadline">Fecha límite: 2 de Octubre de 2026</span>
-    <div class="rsvp-card">
-      <span class="rsvp-welcome" id="rsvpName">Te esperamos</span>
-      <span class="rsvp-pases" id="rsvpPases"></span>
-      <button class="btn-confirm" id="btnConfirm" type="button">
-        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-        Confirmar Asistencia
+    <div style="margin:32px auto 0;display:flex;flex-direction:column;align-items:center;gap:0">
+      <button class="env-interactive rv" aria-label="Sobre — toca para abrir" aria-expanded="false">
+        <div class="env-body">
+          <svg class="env-svg" viewBox="0 0 260 200" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="ek-env-fill" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#f5dce6"/>
+                <stop offset="100%" stop-color="#faf0f4"/>
+              </linearGradient>
+            </defs>
+            <rect x="18" y="52" width="224" height="132" rx="10" fill="url(#ek-env-fill)" stroke="rgba(222,149,178,.5)" stroke-width="1.4"/>
+            <path d="M18 184 L130 110 L242 184" stroke="rgba(222,149,178,.35)" stroke-width="1" fill="none"/>
+            <line x1="90" y1="30" x2="90" y2="20" stroke="var(--copper)" stroke-width="1.3" stroke-linecap="round" opacity=".4"/>
+            <line x1="130" y1="24" x2="130" y2="14" stroke="var(--copper)" stroke-width="1.3" stroke-linecap="round" opacity=".55"/>
+            <line x1="170" y1="30" x2="170" y2="20" stroke="var(--copper)" stroke-width="1.3" stroke-linecap="round" opacity=".4"/>
+            <line x1="110" y1="18" x2="110" y2="10" stroke="var(--copper-light)" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+            <line x1="150" y1="18" x2="150" y2="10" stroke="var(--copper-light)" stroke-width="1" stroke-linecap="round" opacity=".3"/>
+            <circle cx="130" cy="118" r="16" fill="rgba(14,51,102,.12)" stroke="rgba(14,51,102,.35)" stroke-width="1"/>
+            <text x="130" y="123" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="var(--copper-light)" opacity=".9">K&amp;E</text>
+          </svg>
+          <div class="env-flap-wrap" aria-hidden="true">
+            <svg viewBox="0 0 224 86" preserveAspectRatio="none" style="width:100%;height:100%">
+              <defs>
+                <linearGradient id="ek-flap-fill" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#e8b5c8"/>
+                  <stop offset="100%" stop-color="#f5dce6"/>
+                </linearGradient>
+              </defs>
+              <path d="M0 0 L112 86 L224 0 Z" fill="url(#ek-flap-fill)" stroke="rgba(222,149,178,.5)" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="env-open-content" aria-live="polite">
+          <svg class="env-mailbox-icon" viewBox="0 0 52 52" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <rect x="8" y="22" width="36" height="24" rx="5"/>
+            <path d="M8 30 Q26 38 44 30"/>
+            <rect x="18" y="8" width="16" height="16" rx="2"/>
+            <path d="M18 8 Q26 3 34 8"/>
+            <rect x="20" y="28" width="12" height="2.5" rx="1.25" fill="currentColor" stroke="none" opacity=".4"/>
+          </svg>
+          <p class="env-title">Lluvia de Sobres</p>
+          <p class="env-desc">El día del evento habrá un buzón<br>donde podrás depositar tu sobre con cariño.</p>
+        </div>
       </button>
-      <span class="rsvp-status" id="rsvpStatus"></span>
+      <p class="env-tap-hint rv">Toca el sobre</p>
     </div>
   </section>
 
@@ -656,6 +667,48 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       </a>
     </div>
     <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:2px;color:var(--copper);text-align:center;margin-top:18px;opacity:.6">@elysium.invitaciones</p>
+  </section>
+
+  <!-- RSVP -->
+  <section id="rsvp" class="sec rv">
+    <p class="eyebrow">Confirmación</p>
+    <h2 class="script-title">RSVP</h2>
+    <p class="section-sub">Confirma tu asistencia</p>
+    <div class="rsvp-card">
+      <svg class="rsvp-corner tl" viewBox="0 0 36 36" fill="none"><path d="M2 2L2 16M2 2L16 2" stroke="var(--copper)" stroke-width="1.2" opacity=".5"/><circle cx="2" cy="2" r="1.8" fill="var(--copper)" opacity=".35"/></svg>
+      <svg class="rsvp-corner tr" viewBox="0 0 36 36" fill="none"><path d="M2 2L2 16M2 2L16 2" stroke="var(--copper)" stroke-width="1.2" opacity=".5"/><circle cx="2" cy="2" r="1.8" fill="var(--copper)" opacity=".35"/></svg>
+      <svg class="rsvp-corner bl" viewBox="0 0 36 36" fill="none"><path d="M2 2L2 16M2 2L16 2" stroke="var(--copper)" stroke-width="1.2" opacity=".5"/><circle cx="2" cy="2" r="1.8" fill="var(--copper)" opacity=".35"/></svg>
+      <svg class="rsvp-corner br" viewBox="0 0 36 36" fill="none"><path d="M2 2L2 16M2 2L16 2" stroke="var(--copper)" stroke-width="1.2" opacity=".5"/><circle cx="2" cy="2" r="1.8" fill="var(--copper)" opacity=".35"/></svg>
+      <div class="rsvp-ornament">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2L9 9H2l6 4.5L5.5 22 12 17l6.5 5-2.5-8.5L22 9h-7z" fill="var(--copper)" opacity=".5"/></svg>
+      </div>
+      <p class="eyebrow" style="margin-bottom:6px">Te esperamos</p>
+      <span class="rsvp-name-display" id="rsvp-name-display"></span>
+      <div class="rsvp-divider-heart">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--copper)" opacity=".45"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <p class="rsvp-pases-note" id="rsvp-pases-note">Pases asignados: <strong id="rsvp-pases-num">1</strong></p>
+      <div class="rsvp-toggle">
+        <button class="rsvp-toggle-btn" id="btnYes" type="button">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          Asistiré
+        </button>
+        <button class="rsvp-toggle-btn" id="btnNo" type="button">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+          No podré
+        </button>
+      </div>
+      <div id="rsvp-fields" style="display:none"></div>
+      <button class="rsvp-confirm-btn" id="rsvp-confirm-btn" type="button">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+        <span id="rsvp-btn-text">Confirmar</span>
+      </button>
+      <p class="rsvp-feedback" id="rsvp-feedback"></p>
+      <span class="rsvp-deadline-badge">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Fecha límite: 2 de Octubre 2026
+      </span>
+    </div>
   </section>
 
   <!-- FOOTER -->
@@ -753,15 +806,6 @@ function initEnvelope(){
   tick();setInterval(tick,1000);
 })();
 
-document.querySelectorAll('.loc-tab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.loc-tab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.loc-panel').forEach(p=>p.classList.remove('active'));
-    tab.classList.add('active');
-    document.getElementById('panel-'+tab.dataset.panel).classList.add('active');
-  });
-});
-
 function showToast(){const t=document.getElementById('copyToast');t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2000);}
 
 /* ── VINYL MUSIC BUTTON ── */
@@ -790,31 +834,179 @@ function showToast(){const t=document.getElementById('copyToast');t.classList.ad
   });
 })();
 
+// ------ SOBRE INTERACTIVO ------
 (function(){
-  const params=new URLSearchParams(window.location.search);
-  const para=params.get('para');
-  const pases=params.get('pases');
-  const nameEl=document.getElementById('rsvpName');
-  const pasesEl=document.getElementById('rsvpPases');
-  const btn=document.getElementById('btnConfirm');
-  const status=document.getElementById('rsvpStatus');
-  if(para)nameEl.textContent=decodeURIComponent(para);
-  if(pases)pasesEl.textContent='Pases asignados: '+pases;
+  var btn=document.querySelector('.env-interactive');
+  if(!btn)return;
   btn.addEventListener('click',function(){
-    btn.disabled=true;btn.textContent='Enviando...';
-    fetch('https://panel-invitados.vercel.app/api/confirmar',{
-      method:'POST',headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({slug:'boda-eduardo-y-karen',nombre:para||'Invitado',pases:parseInt(pases)||1,confirmado:true})
-    }).then(r=>r.json()).then(()=>{
-      status.textContent='¡Asistencia confirmada! Te esperamos.';
-      status.style.display='block';status.style.color='var(--accent)';
-      btn.textContent='✓ Confirmado';btn.style.background='var(--copper)';
-    }).catch(()=>{
-      status.textContent='Hubo un error, intenta de nuevo.';
-      status.style.display='block';status.style.color='#c44';
-      btn.disabled=false;btn.innerHTML='<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Confirmar Asistencia';
-    });
+    var isOpen=btn.classList.toggle('open');
+    btn.setAttribute('aria-expanded',isOpen?'true':'false');
   });
+  btn.addEventListener('touchstart',function(e){
+    e.preventDefault();
+    var isOpen=btn.classList.toggle('open');
+    btn.setAttribute('aria-expanded',isOpen?'true':'false');
+  },{passive:false});
+})();
+
+// ------ RSVP PANEL INTEGRATION ------
+(function(){
+  var PANEL_API='https://panel-invitados.vercel.app/api/confirmar';
+  var RSVP_URL='https://boda-eduardo-y-karen.vercel.app';
+  var DEADLINE=new Date(2026,9,2,23,59,59,999);
+  var frozen=Date.now()>DEADLINE.getTime();
+
+  var params=new URLSearchParams(window.location.search);
+  var urlPara=(params.get('para')||'').trim();
+  var rawP=parseInt(params.get('pases')||'1',10);
+  var urlPases=(isNaN(rawP)||rawP<1||rawP>20)?1:rawP;
+
+  var rsvpChoice=null;
+  var noteEl=document.getElementById('rsvp-pases-note');
+  var pasesNumEl=document.getElementById('rsvp-pases-num');
+  var fieldsEl=document.getElementById('rsvp-fields');
+  var btnYes=document.getElementById('btnYes');
+  var btnNo=document.getElementById('btnNo');
+  var confirmBtn=document.getElementById('rsvp-confirm-btn');
+  var btnText=document.getElementById('rsvp-btn-text');
+  var feedbackEl=document.getElementById('rsvp-feedback');
+
+  if(pasesNumEl)pasesNumEl.textContent=urlPases;
+
+  var rsvpNameEl=document.getElementById('rsvp-name-display');
+  if(urlPara&&rsvpNameEl){
+    rsvpNameEl.textContent=urlPara;
+    rsvpNameEl.style.display='';
+  }
+
+  function renderFields(count){
+    if(!fieldsEl)return;
+    fieldsEl.innerHTML='';
+    for(var i=0;i<count;i++){
+      var inp=document.createElement('input');
+      inp.className='rsvp-input';
+      inp.type='text';
+      inp.placeholder='Nombre del invitado '+(i+1);
+      inp.autocomplete='off';
+      fieldsEl.appendChild(inp);
+    }
+  }
+
+  function selectRsvp(choice){
+    rsvpChoice=choice;
+    if(btnYes){
+      btnYes.classList.toggle('rsvp-toggle-selected-yes',choice==='yes');
+      btnYes.classList.remove('rsvp-toggle-selected-no');
+    }
+    if(btnNo){
+      btnNo.classList.toggle('rsvp-toggle-selected-no',choice==='no');
+      btnNo.classList.remove('rsvp-toggle-selected-yes');
+    }
+    if(fieldsEl){
+      if(choice==='yes'){
+        renderFields(urlPases);
+        fieldsEl.style.display='';
+      }else{
+        fieldsEl.innerHTML='';
+        fieldsEl.style.display='none';
+      }
+    }
+  }
+
+  if(urlPara){
+    fetch(PANEL_API+'?nombre='+encodeURIComponent(urlPara)+'&url_boda='+encodeURIComponent(RSVP_URL))
+      .then(function(r){return r.json();})
+      .then(function(d){
+        if(!d.ok||!d.invitado)return;
+        var inv=d.invitado;
+        if(inv.estado==='confirmado'){
+          selectRsvp('yes');
+          if(btnText)btnText.textContent='Actualizar respuesta';
+          var prev=inv.nombres_confirmados||[];
+          if(prev.length>0&&fieldsEl){
+            var inputs=fieldsEl.querySelectorAll('input');
+            prev.forEach(function(n,i){if(inputs[i])inputs[i].value=n;});
+          }
+        }else if(inv.estado==='declino'){
+          selectRsvp('no');
+          if(btnText)btnText.textContent='Actualizar respuesta';
+        }
+      }).catch(function(){});
+  }
+
+  if(frozen){
+    if(btnYes){btnYes.disabled=true;}
+    if(btnNo){btnNo.disabled=true;}
+    if(confirmBtn){confirmBtn.disabled=true;}
+    if(btnText)btnText.textContent='Plazo vencido';
+    return;
+  }
+
+  if(btnYes)btnYes.addEventListener('click',function(){selectRsvp('yes');});
+  if(btnNo)btnNo.addEventListener('click',function(){selectRsvp('no');});
+
+  if(confirmBtn){
+    confirmBtn.addEventListener('click',function(){
+      if(!rsvpChoice){
+        if(feedbackEl){
+          feedbackEl.textContent='Por favor selecciona si asistirás o no.';
+          feedbackEl.style.display='';
+          feedbackEl.style.color='var(--copper)';
+        }
+        return;
+      }
+      var nombres=[];
+      if(rsvpChoice==='yes'&&fieldsEl){
+        nombres=Array.from(fieldsEl.querySelectorAll('input'))
+          .map(function(i){return i.value.trim();})
+          .filter(function(n){return n.length>0;});
+      }
+      var nombre=urlPara||(nombres[0]||'');
+      if(!nombre){
+        if(feedbackEl){
+          feedbackEl.textContent='Por favor ingresa tu nombre.';
+          feedbackEl.style.display='';
+          feedbackEl.style.color='var(--copper)';
+        }
+        return;
+      }
+      confirmBtn.disabled=true;
+      if(btnText)btnText.textContent='Enviando…';
+      fetch(PANEL_API,{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({
+          nombre:nombre,
+          url_boda:RSVP_URL,
+          estado:rsvpChoice==='yes'?'confirmado':'declino',
+          pases_confirmados:rsvpChoice==='yes'?(nombres.length||urlPases):0,
+          nombres_confirmados:rsvpChoice==='yes'?nombres:[]
+        })
+      })
+      .then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+      .then(function(resp){
+        if(resp&&resp.error)throw new Error(resp.error);
+        confirmBtn.disabled=false;
+        if(btnText)btnText.textContent='Actualizar respuesta';
+        if(feedbackEl){
+          feedbackEl.style.display='';
+          feedbackEl.style.color=rsvpChoice==='yes'?'#2F5A28':'var(--copper)';
+          feedbackEl.textContent=rsvpChoice==='yes'
+            ?'¡Gracias! Tu confirmación ha sido recibida. ✦'
+            :'Respuesta guardada. ¡Gracias por avisarnos!';
+        }
+      })
+      .catch(function(){
+        confirmBtn.disabled=false;
+        if(btnText)btnText.textContent='Confirmar';
+        if(feedbackEl){
+          feedbackEl.style.display='';
+          feedbackEl.style.color='#B85042';
+          feedbackEl.textContent='No pudimos guardar tu respuesta. Revisa tu conexión e intenta de nuevo.';
+        }
+      });
+    });
+  }
 })();
 
 /* ── 3D WHEEL CAROUSEL ── */
