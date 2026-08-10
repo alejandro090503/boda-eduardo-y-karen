@@ -7,7 +7,7 @@
 <meta name="description" content="Nos casamos y queremos que estés ahí. Una celebración especial en Cancún — 10 de Octubre 2026">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://boda-eduardo-y-karen.vercel.app/">
-<meta property="og:title" content="Karen Y Eduardo · 10 · X · MMXXVI">
+<meta property="og:title" content="Karen Y Eduardo · 10 · Octubre · 2026">
 <meta property="og:description" content="Nos casamos y queremos que estés ahí. Cancún — 10 Octubre 2026">
 <meta property="og:image" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
 <meta property="og:image:secure_url" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
@@ -18,7 +18,7 @@
 <meta property="og:locale" content="es_MX">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://boda-eduardo-y-karen.vercel.app/">
-<meta name="twitter:title" content="Karen Y Eduardo · 10 · X · MMXXVI">
+<meta name="twitter:title" content="Karen Y Eduardo · 10 · Octubre · 2026">
 <meta name="twitter:description" content="Nos casamos y queremos que estés ahí. Cancún — 10 Octubre 2026">
 <meta name="twitter:image" content="https://boda-eduardo-y-karen.vercel.app/og.jpg">
 <script>if('scrollRestoration' in history){history.scrollRestoration='manual';}window.scrollTo(0,0);</script>
@@ -79,7 +79,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 /* HERO */
 #hero{position:relative;height:100vh;height:100dvh;min-height:620px;display:flex;align-items:center;justify-content:center}
 .hero-bg{position:absolute;inset:0;background:url('portada.jpg') center/cover no-repeat;background-color:var(--surface)}
-.hero-veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(14,51,102,.2) 0%,rgba(14,51,102,.08) 35%,rgba(255,255,255,.55) 72%,var(--bg) 100%)}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.1) 0%,transparent 40%,rgba(0,0,0,.35) 70%,rgba(0,0,0,.7) 100%)}
 .hero-deco{position:absolute;inset:16px;pointer-events:none}
 .hero-deco-corner{position:absolute;width:44px;height:44px}
 .hero-deco-corner svg{width:44px;height:44px}
@@ -87,10 +87,10 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .hdc-tr{top:0;right:0;transform:scaleX(-1)}
 .hdc-bl{bottom:0;left:0;transform:scaleY(-1)}
 .hdc-br{bottom:0;right:0;transform:scale(-1)}
-.hero-content{position:relative;z-index:2;text-align:center;padding:0 28px}
+.hero-content{position:absolute;bottom:60px;left:0;right:0;z-index:2;text-align:center;padding:0 28px}
 .hero-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:8px;text-transform:uppercase;color:rgba(201,160,78,.9);display:block;margin-bottom:16px}
-.hero-bride,.hero-groom{font-family:'Great Vibes',cursive;font-size:clamp(70px,22vw,96px);color:#FFFFFF;line-height:1;display:block;text-shadow:0 2px 24px rgba(14,51,102,.35);filter:drop-shadow(0 1px 3px rgba(0,0,0,.2))}
-.hero-amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:36px;color:var(--copper-light);display:block;margin:.1em 0}
+.hero-bride,.hero-groom{font-family:'Great Vibes',cursive;font-size:clamp(70px,22vw,96px);line-height:1;display:block;background:linear-gradient(100deg,#6B4F1C,#7A5C22,#8A6A28,#A8822F,#9A7830,#B98F3C,#C9A04E,#E8D5A3,#F5E6B8,#FFFBEA,#F5E6B8,#E8D5A3,#C9A04E,#B98F3C,#9A7830,#A8822F,#8A6A28,#7A5C22,#6B4F1C);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldSweep 5s linear infinite;filter:drop-shadow(0 2px 8px rgba(0,0,0,.4))}
+.hero-amp{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:36px;display:block;margin:.1em 0;background:linear-gradient(100deg,#9A7830,#C9A04E,#E8D5A3,#FFFBEA,#E8D5A3,#C9A04E,#9A7830);background-size:300% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:goldSweep 5s linear infinite;filter:drop-shadow(0 1px 4px rgba(0,0,0,.3))}
 .hero-date{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;letter-spacing:7px;color:#FFFFFF;margin-top:18px;display:block;text-shadow:0 1px 8px rgba(0,0,0,.55),0 0 24px rgba(0,0,0,.35)}
 
 /* FECHA */
@@ -255,7 +255,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .qr-deco-line{display:flex;align-items:center;gap:8px;width:190px}
 .qr-deco-line::before,.qr-deco-line::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(201,160,78,.55),transparent)}
 .qr-deco-line span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(201,160,78,.75);white-space:nowrap}
-.qr-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(201,160,78,.7)}
+.qr-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:600}
 
 /* RSVP — Glassmorphism Card */
 #rsvp{padding:80px 28px;background:var(--bg);text-align:center}
@@ -357,11 +357,9 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       <div class="hero-deco-corner hdc-br"><svg viewBox="0 0 44 44" fill="none"><path d="M2 2L2 20M2 2L20 2" stroke="#C9A04E" stroke-width="1.6" opacity=".65"/><path d="M2 24L2 32M24 2L32 2" stroke="#C9A04E" stroke-width=".7" opacity=".38"/><path d="M6 6L6 15M6 6L15 6" stroke="#C9A04E" stroke-width=".7" opacity=".28"/><circle cx="2" cy="2" r="2.2" fill="#C9A04E" opacity=".5"/></svg></div>
     </div>
     <div class="hero-content">
-      <span class="hero-tag rv">10 · Octubre · 2026</span>
       <span class="hero-bride rv">Karen</span>
       <span class="hero-amp rv">Y</span>
       <span class="hero-groom rv">Eduardo</span>
-      <span class="hero-date rv">Cancún, Q. Roo</span>
     </div>
     <div class="scroll-hint" id="scrollHint">
       <span class="scroll-hint-txt">Desliza</span>
@@ -593,7 +591,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
         <path d="M4 26c4-6 8-6 12 0s8 6 12 0 8-6 12 0 8 6 12 0 8-6 12 0" stroke="var(--gold-light)" stroke-width="2" stroke-linecap="round"/>
         <circle cx="32" cy="8" r="4.5" fill="var(--gold)" opacity=".6"/>
       </svg>
-      <span style="font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--gold)">Sugerencia: lleva traje de baño, ¡habrá alberca!</span>
+      <span style="font-family:'Cormorant Garamond',serif;font-size:.95rem;color:var(--gold)">Sugerencia: lleva traje de baño y repelente, ¡habrá alberca!</span>
     </div>
   </section>
 
@@ -680,7 +678,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
         <div class="qr-deco-line"><span>Escanea para subir</span></div>
         <img src="https://api.qrserver.com/v1/create-qr-code/?size=190x190&color=0e3366&bgcolor=FFFFFF&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1qm7qqxGbnMJ4QU-maAVYBaNf96O9ZsDw%3Fusp%3Dsharing" alt="QR Álbum de fotos">
         <div class="qr-deco-line"><span>Álbum compartido</span></div>
-        <span class="qr-label">Karen Y Eduardo · 10 · X · MMXXVI</span>
+        <span class="qr-label">Karen Y Eduardo · 10 · Octubre · 2026</span>
       </div>
     </div>
     <div style="margin-top:22px;text-align:center">
@@ -729,7 +727,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       <p class="rsvp-feedback" id="rsvp-feedback"></p>
       <span class="rsvp-deadline-badge">
         <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-        Fecha límite: 2 de Octubre 2026
+        Fecha límite: 10 de Octubre 2026
       </span>
     </div>
   </section>
@@ -745,7 +743,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
       </svg>
     </div>
     <div class="footer-names rv">Karen Y Eduardo</div>
-    <div class="footer-date rv">10 · Octubre · MMXXVI</div>
+    <div class="footer-date rv">10 · Octubre · 2026</div>
     <div class="footer-hr"></div>
     <a href="https://www.instagram.com/elysium.invitaciones" target="_blank" rel="noopener" class="footer-credit rv">@elysium.invitaciones</a>
   </footer>
@@ -753,7 +751,7 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 </div>
 
 <!-- VINYL DISC MUSIC BUTTON -->
-<audio id="bgAudio" loop preload="none"><source src="https://bsjoelxktbvlavfoozhk.supabase.co/storage/v1/object/public/fotos-clientes/audio/boda-eduardo-y-karen/cancion.mp3" type="audio/mpeg"></audio>
+<audio id="bgAudio" loop preload="none"><source src="cancion.mp3" type="audio/mpeg"></audio>
 <div class="vinyl-btn" id="vinylBtn" aria-label="Música">
   <div class="vinyl-disc" id="vinylDisc">
     <div class="vinyl-sheen"></div>
@@ -884,7 +882,7 @@ function showToast(){const t=document.getElementById('copyToast');t.classList.ad
 (function(){
   var PANEL_API='https://panel-invitados.vercel.app/api/confirmar';
   var RSVP_URL='https://boda-eduardo-y-karen.vercel.app';
-  var DEADLINE=new Date(2026,9,2,23,59,59,999);
+  var DEADLINE=new Date(2026,9,10,23,59,59,999);
   var frozen=Date.now()>DEADLINE.getTime();
 
   var params=new URLSearchParams(window.location.search);
